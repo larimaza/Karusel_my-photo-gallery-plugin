@@ -1,0 +1,32 @@
+#karusel {
+  overflow: hidden;
+}
+
+#karusel div {
+  display: inline-block;
+  float: left;
+}
+
+.karusel-track {
+  width: 3000px;
+}
+
+.karusel-prev {
+  padding: 9px;
+  border-radius: 16px;
+  background: black;
+  top: 50%;
+  left: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.karusel-next {
+  padding: 9px;
+  border-radius: 16px;
+  background: black;
+  top: 50%;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+}
