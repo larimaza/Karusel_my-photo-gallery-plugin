@@ -7,10 +7,6 @@
   float: left;
 }
 
-.karusel-track {
-  width: 3000px;
-}
-
 .karusel-prev {
   padding: 9px;
   border-radius: 16px;
@@ -29,4 +25,8 @@
   right: 20px;
   position: absolute;
   cursor: pointer;
+}
+
+.temp-frame {
+  width: 1000px;
 }
