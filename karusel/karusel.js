@@ -28,7 +28,7 @@ karuselTrack.style.transform = `translateX(${transformValue}px)`;
 // Event handlers
 /////////////////////
 
-window.addEventListener('load', function () {
+imageSample.addEventListener('load', function () {
   imageWidth = imageSample.width;
   karuselTrack.width = imageWidth; /* isso não funciona */
   return imageWidth;
