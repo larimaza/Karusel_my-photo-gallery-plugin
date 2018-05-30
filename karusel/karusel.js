@@ -23,25 +23,21 @@ nextBtn.classList.add('karusel-next');
 var transformValue = -560;
 karuselTrack.style.transform = `translateX(${transformValue}px)`;
 
-
 /////////////////////
 // Event handlers
 /////////////////////
 
 imageSample.addEventListener('load', function () {
   imageWidth = imageSample.width;
-  karuselTrack.width = imageWidth; /* isso não funciona */
-  return imageWidth;
-}); /* por que isso só funciona sem declarar var? declarado lá em cima ao invés */
+  karuselTrack.style.width = `${imageWidth * 3}px`;
+});
 
 prevBtn.addEventListener('click', function () {
   transformValue = transformValue + imageWidth;
   karuselTrack.style.transform = `translateX(${transformValue}px)`;
-  return transformValue;
 });
 
 nextBtn.addEventListener('click', function () {
   transformValue = transformValue - imageWidth;
   karuselTrack.style.transform = `translateX(${transformValue}px)`;
-  return transformValue;
 });
